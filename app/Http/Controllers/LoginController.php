@@ -31,7 +31,7 @@ class LoginController extends Controller
 		$user =User::where('phone', $request->input('phone'))->where('password',$request->input('password'))->first();
 		 if(!empty($user)){ 
 		 
-			return response()->json(['status' => 'success','data'=>$user],2000);
+			return response()->json(['status' => 'success','data'=>$user],20);
 	
 		//User::where('phone','91-9988030541')->where('password','57Ebil')->first()
     
